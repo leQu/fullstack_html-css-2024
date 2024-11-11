@@ -3,3 +3,4 @@ Hej!
 Idag ska vi prata om git och versionshantering! Vi har täckt
 
 - Git
+- Add / Commit i både terminalen och i vsCode
