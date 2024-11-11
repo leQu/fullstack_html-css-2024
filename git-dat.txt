@@ -5,3 +5,4 @@ Idag ska vi prata om git och versionshantering! Vi har täckt
 - Git
 - Add / Commit i både terminalen och i vsCode
 - Git branch, vi skapar en ny branch för en ny del av projektet. 
+- Helt ovetande är vi om kommande konflikt.
