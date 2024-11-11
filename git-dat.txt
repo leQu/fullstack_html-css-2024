@@ -1,0 +1,5 @@
+Hej!
+
+Idag ska vi prata om git och versionshantering! Vi har täckt
+
+- Git
