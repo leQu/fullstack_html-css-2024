@@ -1,0 +1,3 @@
+Vi testar brancher.
+
+Vi arbetar med kommandot 'git branch -b' där "-b" innebär att vi satte upp en ny branch
