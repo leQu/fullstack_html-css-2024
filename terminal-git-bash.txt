@@ -1,0 +1,5 @@
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export LSCOLORS=exfxcxdxbxegedabagacad
+export PS1=" 💃🦍💨 \[\033[01;30m\]\W\[\e[0;32m\]\$(parse_git_branch)\[\e[0m\] "
