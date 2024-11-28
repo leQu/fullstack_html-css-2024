@@ -1,0 +1,39 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+p {
+  font-size: 16px;
+  color: green;
+}
+button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+}
+
+/* @keyframes textColorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+span {
+  color: #b63535;
+  font-size: 20px;
+  animation: textColorChange 1s infinite;
+} */
+
+.main-header {
+  color: red;
+  padding: 10px;
+}
+
+#head {
+  color: green;
+}
