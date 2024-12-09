@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 8px;
+}
+
+body {
+  height: 200vh;
+}
+
+p {
+  font-size: 2rem;
+  color: #333;
+}
+
+.top-box {
+  background-color: red;
+  margin-bottom: 0;
+  height: 50vh;
+  border: solid 1rem black;
+}
+
+.top-box > div {
+  background-color: blue;
+  top: 0;
+  color: white;
+  position: sticky;
+  padding: 2px;
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+}
+
+.innerbox {
+  background-color: blue;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.bottom-box {
+  background-color: green;
+  padding: 10rem;
+  border: solid 1rem black;
+}
