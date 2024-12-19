@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: red;
+}
+
+.link:first-child:active {
+  background-color: green;
+  font-size: 2rem;
+}
+
+.firstLink:hover {
+  color: blue;
+}
+
+.link::before {
+  content: "🔗";
+  background-color: red;
+}
+
+.noSpanspan {
+  font-weight: 900;
+}
+
+.heroContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwg-qBS2rWRN57RS_I6rK8eqv3AKnorOlRA&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(
+    180deg,
+    rgba(230, 131, 174, 1) 35%,
+    rgba(40, 80, 126, 1) 100%
+  ); */
+
+  h1 {
+    font-size: 100px;
+  }
+}
