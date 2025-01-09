@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: lightseagreen;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        height: 100vh;
+        background-color: lightcoral;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: start;
+      }
+
+      .flex-items {
+        background-color: red;
+        padding: 50px;
+        margin: 10px;
+        height: 90px;
+        overflow: hidden;
+        p {
+          height: 60px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .flex-items:first-child {
+        background-color: blue;
+        padding: 10px;
+      }
+
+      .flex-items:last-child {
+        padding: 20px;
+        background-color: green;
+      }
+
+      .flex-items:nth-child(2) {
+        padding: 30px;
+        background-color: yellow;
+      }
+      .flex-items:nth-child(6) {
+        padding: 30px;
+        background-color: yellow;
+      }
+
+      @media (max-width: 600px) {
+        .container > p {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-items">
+        <div></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          veniam quod culpa, hic quo eaque rem iure, quis laboriosam tenetur
+          blanditiis nemo consequuntur nulla nisi temporibus id, expedita
+          molestias facere. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quibusdam veniam quod culpa, hic quo eaque rem iure, quis
+          laboriosam tenetur blanditiis nemo consequuntur nulla nisi temporibus
+          id, expedita molestias facere. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quibusdam veniam quod culpa, hic quo eaque rem iure,
+          quis laboriosam tenetur blanditiis nemo consequuntur nulla nisi
+          temporibus id, expedita molestias facere. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quibusdam veniam quod culpa, hic quo
+          eaque rem iure, quis laboriosam tenetur blanditiis nemo consequuntur
+          nulla nisi temporibus id, expedita molestias facere. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quibusdam veniam quod culpa,
+          hic quo eaque rem iure, quis laboriosam tenetur blanditiis nemo
+          consequuntur nulla nisi temporibus id, expedita molestias facere.
+        </p>
+      </div>
+      <div class="flex-items"><p>2</p></div>
+      <div class="flex-items"><p>3</p></div>
+      <div class="flex-items"><p>4</p></div>
+      <!-- <div class="flex-items"><p>1</p></div>
+      <div class="flex-items"><p>2</p></div>
+      <div class="flex-items"><p>3</p></div>
+      <div class="flex-items"><p>4</p></div> -->
+    </div>
+  </body>
+</html>
