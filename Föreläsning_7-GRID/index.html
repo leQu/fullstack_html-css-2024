@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="https://www.w3schools.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .grid-container {
+        display: grid;
+        height: 100vh;
+        background-color: mistyrose;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(6, 100px);
+        gap: 20px;
+        grid-template-areas:
+          "header header header header"
+          "header header header header"
+          "main main main aside"
+          "main main main aside"
+          "main main main aside"
+          "footer footer footer footer";
+        div {
+          border: dashed 1px darkblue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+          color: darkblue;
+          padding: 10px;
+          margin: 5px;
+        }
+      }
+      .grid-item-1 {
+        /* grid-column-start: 1;
+                    grid-column-end: 5;
+                    grid-row-start: 1;
+                    grid-row-end: 3; */
+        background-color: lightyellow;
+        grid-area: header;
+      }
+      .grid-item-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        background-color: lightblue;
+        /* grid-column: 1 / 4;
+                    grid-row: 3 / 6; */
+        grid-area: main;
+        div {
+          width: 150px;
+        }
+      }
+
+      .grid-item-3 {
+        background-color: lightgreen;
+        /* grid-column: 4 / 5;
+                    grid-row: 3 / 6; */
+        grid-area: aside;
+      }
+
+      .grid-item-4 {
+        background-color: lightcoral;
+        grid-area: 6 / 1 / 7 / 5;
+        grid-area: footer;
+      }
+      @media (max-width: 600px) {
+        .grid-container {
+          grid-template-areas:
+            "header header header header"
+            "header header header header"
+            "main main main main"
+            "main main main main"
+            "empty empty empty empty"
+            "footer footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item-1">1</div>
+      <div class="grid-item-2">
+        2
+        <!-- <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div> -->
+      </div>
+      <div class="grid-item-3">3</div>
+      <div class="grid-item-4">4</div>
+    </div>
+  </body>
+</html>
