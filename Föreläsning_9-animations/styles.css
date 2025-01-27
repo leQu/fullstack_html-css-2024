@@ -1,0 +1,40 @@
+.box {
+  width: 100px;
+  height: 100px;
+  margin-top: 200vh;
+  position: relative;
+  background-color: red;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+span {
+  background-color: blue;
+  height: 100px;
+}
+
+.box-animation {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.box-animation-pause {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+    left: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    left: calc(100% - 100px);
+  }
+}
