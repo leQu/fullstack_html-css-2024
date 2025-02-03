@@ -1,0 +1,15 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-box {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+@mixin animation-start {
+    opacity: 0;
+    height: 20px;
+}

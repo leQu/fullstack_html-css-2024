@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b4a63;
+  color: #f4f4f4;
+}
+nav ul {
+  list-style-type: none;
+  margin: 32px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.125rem;
+  background-color: #2b4a63;
+}
+nav ul li {
+  float: left;
+}
+
+.link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.link:hover {
+  background-color: #650000;
+}/*# sourceMappingURL=index.css.map */

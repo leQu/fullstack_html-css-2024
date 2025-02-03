@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'mixins';
+
+@function calculate-rem($size) {
+    $rem-size: $size / 16px;
+    @return #{$rem-size}rem;
+  }
+
+nav {
+    @include flex-center;
+    @include text-box;
+    ul {
+        list-style-type: none;
+        margin: $ml;
+        padding: 0;
+        overflow: hidden;
+        font-size: calculate-rem(18px);
+        background-color: $primary-color;
+        li {
+            float: left;
+        }
+    }
+}
+
+.link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: $mm;
+    text-decoration: none;
+    &:hover {
+        background-color: $accent-color;
+    }
+}
